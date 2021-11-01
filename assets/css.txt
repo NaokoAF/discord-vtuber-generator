@@ -1,0 +1,47 @@
+body {
+    background-color: rgba(0, 0, 0, 0);
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+li.voice-state:not([data-reactid*="%USER_ID%"]) { 
+    display: none;
+}
+
+.avatar {
+    content: url(%NOT_SPEAKING_URL%);
+
+    height: calc(100% - 15px) !important;
+    position: absolute !important;
+    bottom: 0px;
+    left: 50%;
+    width: auto !important;
+    border-radius: 0% !important;
+    filter: brightness(%NOT_SPEAKING_BRIGHTNESS%%);
+    transform: translate(-50%, 0px);
+}
+
+.speaking {
+    content: url(%SPEAKING_URL%);
+	
+    border-color: rgba(0,0,0,0) !important;
+    position: relative;
+    animation-name: speak-now;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    filter: brightness(100%) !important;
+}
+
+div.user {
+	display: %SHOW_NAME%;
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translateX(-50%) scale(1.5);
+}
+
+@keyframes speak-now {
+    0% { transform: translate(-50%, 0px); }
+    15% { transform: translate(-50%, -10px); }
+    30% { transform: translate(-50%, 0px); }
+}
