@@ -1,4 +1,4 @@
-# [discord-vtuber-generator](https://naokoaf.github.io/discord-vtuber-generator)
+# discord-vtuber-generator | [Website](https://naokoaf.github.io/discord-vtuber-generator)
 Generate little bouncing images for you or your friends on Discord, for use on streaming software like OBS.  
 Based on the (now closed) [PNGTuber Steamkit Generator](https://dinhjdev.github.io/PNGTuber-Streamkit-Generator/) by [DinhJDev](https://github.com/DinhJDev)  
 
