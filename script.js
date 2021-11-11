@@ -2,9 +2,9 @@ let base;
 const LINK_BASE = 'https://streamkit.discord.com/overlay/voice/%SERVER_ID%/%CHANNEL_ID%?icon=true&online=true&logo=white&text_color=%23ffffff&text_size=14&text_outline_color=%23000000&text_outline_size=0&text_shadow_color=%23000000&text_shadow_size=0&bg_color=%231e2124&bg_opacity=0.95&bg_shadow_color=%23000000&bg_shadow_size=0&invite_code=&limit_speaking=false&small_avatars=false&hide_names=false&fade_chat=0';
 
 function load(){
-    $.get("../assets/css.txt", function(data) {
-        base = data;
-    });
+	$.get("../assets/css.txt", function(data) {
+		base = data;
+	});
 	
 	const linkForm = document.getElementById('link');
 	linkForm.addEventListener('submit', (event) => {
